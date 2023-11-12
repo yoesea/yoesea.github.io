@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>我的网页</title>
+    <title>My Web Page</title>
     <style>
         body {
-            background-image: url('image1.png');
+            background-image: url('https://github.com/yoesea/yoesea.github.io/blob/master/image1.png?raw=true');
             background-size: cover;
         }
-        .button {
-            width: 100px;
-            height: 50px;
-            margin: 10px;
+        @media screen and (max-width: 600px) {
+            body {
+                background-image: url('https://github.com/yoesea/yoesea.github.io/blob/master/image2.png?raw=true');
+            }
         }
     </style>
 </head>
 <body>
-    <button class="button" onclick="window.location.href='https://www.bilibili.com'">B站</button>
-    <button class="button" onclick="window.location.href='https://www.youtube.com'">Youtube</button>
-    <button class="button" onclick="window.location.href='https://www.github.com'">Github</button>
+    <button onclick="window.location.href='https://www.bilibili.com'" class="btn btn-primary">Bilibili</button>
+    <button onclick="window.location.href='https://www.youtube.com'" class="btn btn-secondary">YouTube</button>
+    <button onclick="window.location.href='https://www.blogspot.com'" class="btn btn-success">blogspot</button>
+    <button onclick="window.location.href='https://www.github.com'" class="btn btn-danger">GitHub</button>
 </body>
 </html>
